@@ -18,12 +18,16 @@ import type {
 export const personalInfo: PersonalInfo = {
   name: "Neha B",
   title: "Data Engineer",
+  // TODO: Replace with your real phone number
+  phone: "+1 (000) 000-0000",
   location: { city: "Dallas, TX", country: "USA" },
   website: "nehab.dev",
   email: "nehareddy2401@gmail.com",
-  avatar: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&h=1000&fit=crop&crop=faces",
+  avatar: "",
   bio: "I'm a Data Engineer with 4+ years of experience designing scalable cloud data solutions across financial and healthcare domains, with a strong emphasis on Microsoft Azure and distributed processing.\n\nI build reliable ETL and ELT pipelines using Azure Data Factory, Azure Databricks, and Azure Data Lake, and I'm proficient in Python, PySpark, Spark, and SQL for large-scale transformations, data quality frameworks, and performance optimization. I also have hands-on AWS experience with Glue, S3, and CloudWatch for healthcare data platforms.\n\nI care deeply about data quality, incremental processing, and production reliability — from watermark-based ingestion and source-to-target reconciliation to monitoring, root-cause analysis, and controlled reruns. I work in Agile teams with Git, peer reviews, and thorough technical documentation.",
   skills: "Microsoft Azure, AWS, Azure Data Factory, Azure Databricks, Azure Data Lake, AWS Glue, Amazon S3, CloudWatch, Apache Spark, PySpark, Spark SQL, Python, SQL, ETL/ELT, Incremental Loading, Data Quality, Reconciliation, Performance Optimization, Git, Agile",
+  // TODO: Replace with the real file name when you update the resume
+  resumeUrl: "/NEHA_B_Resume.pdf",
 };
 
 export const experience: Experience[] = [
