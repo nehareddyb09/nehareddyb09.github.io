@@ -14,14 +14,6 @@ export default function ContactSection() {
         
         <div className="flex items-center lg:pl-16">
           <div className="space-y-6">
-            <div className="mb-10">
-              <img 
-                src={personalInfo.avatar} 
-                alt={personalInfo.name}
-                className="w-48 h-64 object-cover"
-              />
-            </div>
-            
             <p className="text-large">{personalInfo.name}</p>
             
             <a 

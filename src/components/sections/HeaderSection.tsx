@@ -17,20 +17,12 @@ export default function HeaderSection() {
           <p className="text-tiny tracking-widest">{personalInfo.title}</p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-center">
-          <div className="text-center lg:text-right">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          <div className="text-center">
             <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{firstName}</h1>
           </div>
 
-          <div className="flex justify-center">
-            <img
-              src={personalInfo.avatar}
-              alt={personalInfo.name}
-              className="w-full max-w-[52rem] h-auto aspect-[52/60] object-cover rounded-t-[160px]"
-            />
-          </div>
-
-          <div className="text-center lg:text-left">
+          <div className="text-center">
             <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{lastName}</h1>
           </div>
         </div>
