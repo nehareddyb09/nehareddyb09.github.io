@@ -6,12 +6,14 @@
 export interface PersonalInfo {
   name: string;
   title: string;
+  phone: string;
   location: { city: string; country: string };
   website: string;
   email: string;
   avatar: string;
   bio: string;
   skills: string;
+  resumeUrl: string;
 }
 
 export interface Experience {
