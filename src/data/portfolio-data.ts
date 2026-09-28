@@ -64,6 +64,9 @@ export const projects: Project[] = [
     description:
       "Scalable Azure-based ingestion platform for high-volume financial data. Parameterized ADF pipelines with watermark-based incremental loading feed Azure Data Lake, with PySpark transformations on Databricks and SQL reconciliation for reporting confidence.",
     techStack: ["Azure Data Factory", "Databricks", "PySpark", "ADLS", "SQL"],
+    // TODO: Replace with the real live demo and GitHub links
+    liveUrl: "https://nehab.dev/financial-data-ingestion",
+    githubUrl: "https://github.com/nehab/financial-data-ingestion",
     status: "active",
   },
   {
@@ -72,6 +75,9 @@ export const projects: Project[] = [
     description:
       "Automated data quality and validation framework for healthcare datasets on AWS. Includes schema validation, null and duplicate detection, business-rule checks, and source-to-target reconciliation — reducing reconciliation issues by 25%.",
     techStack: ["AWS Glue", "Amazon S3", "Python", "PySpark", "SQL"],
+    // TODO: Replace with the real live demo and GitHub links
+    liveUrl: "https://nehab.dev/healthcare-data-quality",
+    githubUrl: "https://github.com/nehab/healthcare-data-quality",
     status: "active",
   },
   {
@@ -80,6 +86,9 @@ export const projects: Project[] = [
     description:
       "Reusable ELT patterns for change-based incremental processing across cloud data platforms. Partitioning, predicate filtering, and efficient joins cut scheduled pipeline runtime by 20% and improved daily refresh efficiency by 18%.",
     techStack: ["Apache Spark", "PySpark", "AWS Glue", "CloudWatch", "Git"],
+    // TODO: Replace with the real live demo and GitHub links
+    liveUrl: "https://nehab.dev/incremental-elt-optimizer",
+    githubUrl: "https://github.com/nehab/incremental-elt-optimizer",
     status: "active",
   },
 ];
