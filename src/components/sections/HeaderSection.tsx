@@ -6,30 +6,15 @@ import { personalInfo } from "@/data/portfolio-data";
  */
 export default function HeaderSection() {
   const currentYear = new Date().getFullYear();
-  const nameParts = personalInfo.name.split(' ');
-  const firstName = nameParts[0];
-  const lastName = nameParts.slice(1).join(' ');
   
   return (
     <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24">
-      <div className="w-full max-w-7xl">
-        <div className="text-center mb-16 md:mb-20">
-          <p className="text-tiny tracking-widest">{personalInfo.title}</p>
-        </div>
-        
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="text-center">
-            <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{firstName}</h1>
-          </div>
-
-          <div className="text-center">
-            <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">{lastName}</h1>
-          </div>
-        </div>
-        
-        <div className="text-center mt-16 md:mt-20">
-          <p className="text-small">{currentYear}</p>
-        </div>
+      <div className="w-full max-w-7xl text-center">
+        <p className="text-tiny tracking-widest mb-12 md:mb-16">{personalInfo.title}</p>
+        <h1 className="text-display lg:text-[9rem] leading-none font-light lg:font-normal">
+          {personalInfo.name}
+        </h1>
+        <p className="text-small mt-16 md:mt-20">{currentYear}</p>
       </div>
     </section>
   );
