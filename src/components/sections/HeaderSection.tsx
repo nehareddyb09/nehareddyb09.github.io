@@ -6,9 +6,6 @@ import { personalInfo } from "@/data/portfolio-data";
  */
 export default function HeaderSection() {
   const currentYear = new Date().getFullYear();
-  const nameParts = personalInfo.name.split(' ');
-  const firstName = nameParts[0];
-  const lastName = nameParts.slice(1).join(' ');
   
   return (
     <section className="flex items-center justify-center px-8 md:px-16 lg:px-24 pt-24 pb-20 md:pt-28 md:pb-24">
