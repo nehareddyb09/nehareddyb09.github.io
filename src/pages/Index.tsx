@@ -104,7 +104,7 @@ export default function Index() {
         />
 
         {/* Skills block */}
-        <section className="col-span-1 md:col-span-2 lg:col-span-2 bg-primary rounded-3xl p-8 text-background">
+        <section className="col-span-1 md:col-span-2 lg:col-span-2 self-start bg-primary rounded-3xl p-8 text-background">
           <h2 className="font-display font-bold mb-4 uppercase tracking-wider text-sm">
             Stack
           </h2>
