@@ -122,10 +122,10 @@ export default function Index() {
 
         {/* Projects grid */}
         <section className="col-span-1 md:col-span-4 lg:col-span-4 grid grid-cols-1 md:grid-cols-2 gap-4">
-          {projects.map((project) => (
+          {projects.map((project, i) => (
             <article
               key={project.id}
-              className="bg-card/10 border border-primary/10 rounded-3xl p-6 flex flex-col justify-between transition-colors hover:border-primary/40"
+              className={`${i === 2 ? "md:col-span-2" : ""} bg-card/10 border border-primary/10 rounded-3xl p-6 flex flex-col justify-between transition-colors hover:border-primary/40`}
             >
               <div>
                 <h3 className="font-display text-white mb-2">{project.name}</h3>
