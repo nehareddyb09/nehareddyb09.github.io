@@ -2,7 +2,6 @@ import {
   personalInfo,
   experience,
   projects,
-  education,
   socialLinks,
 } from "@/data/portfolio-data";
 
@@ -159,31 +158,8 @@ export default function Index() {
           ))}
         </section>
 
-        {/* Education tile */}
-        <section className="col-span-1 md:col-span-3 bg-card/10 border border-primary/10 rounded-3xl p-8">
-          <h2 className="font-display text-primary uppercase tracking-widest text-xs mb-6">
-            Education
-          </h2>
-          <div className="space-y-6">
-            {education.map((edu) => (
-              <div key={edu.id}>
-                <div className="flex justify-between items-baseline gap-4">
-                  <h3 className="font-display text-white font-semibold">{edu.institution}</h3>
-                  <span className="text-xs font-mono text-muted-foreground shrink-0">
-                    {edu.startYear} — {edu.endYear}
-                  </span>
-                </div>
-                <p className="text-sm text-foreground mt-1">
-                  {edu.degree} · {edu.field}
-                </p>
-                <p className="text-xs text-muted-foreground mt-0.5">{edu.location}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Contact tile */}
-        <section className="col-span-1 md:col-span-3 bg-card/10 border border-primary/10 rounded-3xl p-8 flex flex-col justify-between gap-6">
+        <section className="col-span-1 md:col-span-4 lg:col-span-6 bg-card/10 border border-primary/10 rounded-3xl p-8 flex flex-col justify-between gap-6">
           <div>
             <h2 className="font-display text-primary uppercase tracking-widest text-xs mb-6">
               Connect
